@@ -1,0 +1,31 @@
+{
+  "productsbook": [
+    {
+      "name": " KINDLE PAPERWHITE 4 2018",
+      "brand": "Amazon",
+      "price": "133355",
+      "description": "LED подсветка (5 светодиодов по нижнему краю экрана)\nсенсорное управление, ёмкостной мультитач экран\nIPX8 - водонепроницаемость до 2 метров на 60 минут и защита от случайных падений\nподдерживаемые форматы: Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, MOBI, PRC natively — как есть в директории «documents»\nаудиокниги Audible audio format (AAX) — купленные только в официальном магазине\nHTML, DOC, DOCX — конвертация через Send To Kindle\nJPEG, BMP, GIF, PNG — в архивах (ZIP) или отдельных папках директории «images»\nхранилище — неограниченное в облаке для оригинального контента и 6 ГБ для пользовательского\nинтерфейс — русский, английский (UK, US), немецкий, испанский, французский, итальянский, португальский, японский, китайский.\n\n",
+      "image": "https://systema.kg/195562-large_default/elektronnaya-kniga-kindle-paperwhite-4-2018-10th-generation-6-1072x1448-touch-e-ink-carta-display-300-ppi-8gb-ipx8-bluetooth-wi-.jpg",
+      "color": "black",
+      "id": 11
+    },
+    {
+      "name": "KINDLE 9 2019",
+      "brand": "AMAZON",
+      "price": 8379,
+      "description": "LED подсветка (4 светодиода по нижнему краю экрана)\nсенсорное управление\nподдерживаемые форматы: Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, MOBI, PRC natively — как есть в директории «documents»\nаудиокниги Audible audio format (AAX) — купленные только в официальном магазине\nHTML, DOC, DOCX — конвертация через Send To Kindle\nJPEG, BMP, GIF, PNG — в архивах (ZIP) или отдельных папках директории «images»\nхранилище — неограниченное в облаке для оригинального контента и 6 ГБ для пользовательского\nинтерфейс — русский, английский (UK, US), немецкий, испанский, французский, итальянский, португальский, японский, китайский.\nсловари — возможность использования доступных пользовательских словарей, онлайн-переводчик Bing Translator, поиск в Google, Wikipedia, X-Ray, возможность создавать собственный словарь в виде флэш-карт\nсоциальные — цитирование в Facebook и Twitter, интеграция с FreeTime и Goodreads\nWi-Fi | Bluetooth (только для подключения аудиоустройств) | USB micro-B",
+      "image": "https://sila.by/img/catalog2015/img11/tovar110001.jpg",
+      "color": "white",
+      "id": 12
+    },
+    {
+      "name": "POCKETBOOK PB614-2-D-CIS",
+      "brand": "Amazon",
+      "price": 9990,
+      "description": "nДиагональ \\t6″ - 15,2 см\\nСтрана производитель \\tКитай\\nПАМЯТЬ\\nКарты памяти \\tmicroSD\\nОперативная память \\t0,25 GB\\nВстроенная память \\t8 GB\\nФОРМАТЫ\\nФорматы документов \\tPDF, PDF(DRM), EPUB, EPUB(DRM), DJVU, FB2, FB2.ZIP, DOC, DOCX, RTF, PRC, TXT, CHM, HTM, HTML, MOBI, ACSM\\nИзображения \\tJPEG, BMP, PNG, TIFF\\nДИСПЛЕЙ\\nТип дисплея \\tE-Ink Pearl\\nРазрешение экрана \\t600х800\\nП о д с в е т ка \\tНет\\nС е н со р ный ди с п лей \\tНет\\nИНТЕРФЕЙСЫ\\nТип USB разъема \\tUSB 2.0\\nWi-Fi \\tНет\\nЭЛЕКТРОПИТАНИЕ\\nЕмкость аккумулятора \\t1300 мАч\\nТип питания \\tАккумулятор\"",
+      "image": "https://systema.kg/244695-large_default/elektronnaya-kniga-pocketbook-pb614-2-d-cis-white-6-800x600-a13-1ghz-256mb-1300-mah-170g.jpg",
+      "color": "white",
+      "id": 13
+    }
+  ]
+}

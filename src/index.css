@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
+
+* {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Dosis', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+.main-page{
+    margin-top: 80px;
+}
+
+.admin-page{
+    margin-top: 80px;
+}
+
+.add-edit-page{
+    margin-top: 80px;
+
+}
+
+
+
+.add-edit-page form {
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    justify-content: space-between;
+
+}
+
+
+.add-edit-page button {
+    margin-top: 30px;
+}
+
+.add-edit-page form  textarea {
+    margin-top: 16px;
+    outline: none;
+    font-size: 16px;
+    
+
+}
+
+
+.add-edit-page form textarea::placeholder {
+    font-size: 16px;
+}
+
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero-container{
+    /* background: url("/public/images/img-home.jpg") center center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    
+}
+
+.hero-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container > div > h1 {
+    position: relative;
+    color: #fff;
+    font-size: 70px;
+    margin-top: -100px;
+    text-align: center;
+
+}
+
+.hero-container > div > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btns {
+    background-color: transparent;
+    color:#fff;
+    padding: 8px 20px;
+    border: 2px solid ;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    outline: none;
+    
+
+}
+
+
+.btns:hover{
+    background-color: #fff;
+    color: #242424;
+    transition: all 1.2s ease-out;
+}
+
+.hero-btns {
+    margin-top: 32px;
+}
+
+
+
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+
+    .hero-container > div {
+        margin-top: 100px;
+    }
+
+
+    .hero-container > div > h1 {
+        font-size: 70px;
+    
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .hero-container > div {
+        margin-top: 100px;
+    }
+
+    .hero-container > div > h1 {
+        font-size: 50px;
+        /* margin-top: -100px; */
+    
+    }
+
+    .hero-container > p {
+        font-size: 30px;
+    }
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
