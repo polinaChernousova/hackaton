@@ -1,31 +1,112 @@
 {
   "productsbook": [
     {
-      "name": " KINDLE PAPERWHITE 4 2018",
-      "brand": "Amazon",
-      "price": "133355",
-      "description": "LED подсветка (5 светодиодов по нижнему краю экрана)\nсенсорное управление, ёмкостной мультитач экран\nIPX8 - водонепроницаемость до 2 метров на 60 минут и защита от случайных падений\nподдерживаемые форматы: Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, MOBI, PRC natively — как есть в директории «documents»\nаудиокниги Audible audio format (AAX) — купленные только в официальном магазине\nHTML, DOC, DOCX — конвертация через Send To Kindle\nJPEG, BMP, GIF, PNG — в архивах (ZIP) или отдельных папках директории «images»\nхранилище — неограниченное в облаке для оригинального контента и 6 ГБ для пользовательского\nинтерфейс — русский, английский (UK, US), немецкий, испанский, французский, итальянский, португальский, японский, китайский.\n\n",
-      "image": "https://systema.kg/195562-large_default/elektronnaya-kniga-kindle-paperwhite-4-2018-10th-generation-6-1072x1448-touch-e-ink-carta-display-300-ppi-8gb-ipx8-bluetooth-wi-.jpg",
-      "color": "black",
-      "id": 11
-    },
-    {
-      "name": "KINDLE 9 2019",
-      "brand": "AMAZON",
-      "price": 8379,
-      "description": "LED подсветка (4 светодиода по нижнему краю экрана)\nсенсорное управление\nподдерживаемые форматы: Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, MOBI, PRC natively — как есть в директории «documents»\nаудиокниги Audible audio format (AAX) — купленные только в официальном магазине\nHTML, DOC, DOCX — конвертация через Send To Kindle\nJPEG, BMP, GIF, PNG — в архивах (ZIP) или отдельных папках директории «images»\nхранилище — неограниченное в облаке для оригинального контента и 6 ГБ для пользовательского\nинтерфейс — русский, английский (UK, US), немецкий, испанский, французский, итальянский, португальский, японский, китайский.\nсловари — возможность использования доступных пользовательских словарей, онлайн-переводчик Bing Translator, поиск в Google, Wikipedia, X-Ray, возможность создавать собственный словарь в виде флэш-карт\nсоциальные — цитирование в Facebook и Twitter, интеграция с FreeTime и Goodreads\nWi-Fi | Bluetooth (только для подключения аудиоустройств) | USB micro-B",
-      "image": "https://sila.by/img/catalog2015/img11/tovar110001.jpg",
-      "color": "white",
-      "id": 12
-    },
-    {
       "name": "POCKETBOOK PB614-2-D-CIS",
-      "brand": "Amazon",
-      "price": 9990,
-      "description": "nДиагональ \\t6″ - 15,2 см\\nСтрана производитель \\tКитай\\nПАМЯТЬ\\nКарты памяти \\tmicroSD\\nОперативная память \\t0,25 GB\\nВстроенная память \\t8 GB\\nФОРМАТЫ\\nФорматы документов \\tPDF, PDF(DRM), EPUB, EPUB(DRM), DJVU, FB2, FB2.ZIP, DOC, DOCX, RTF, PRC, TXT, CHM, HTM, HTML, MOBI, ACSM\\nИзображения \\tJPEG, BMP, PNG, TIFF\\nДИСПЛЕЙ\\nТип дисплея \\tE-Ink Pearl\\nРазрешение экрана \\t600х800\\nП о д с в е т ка \\tНет\\nС е н со р ный ди с п лей \\tНет\\nИНТЕРФЕЙСЫ\\nТип USB разъема \\tUSB 2.0\\nWi-Fi \\tНет\\nЭЛЕКТРОПИТАНИЕ\\nЕмкость аккумулятора \\t1300 мАч\\nТип питания \\tАккумулятор\"",
+      "brand": "Pocketbook",
+      "price": "9990",
+      "description": "Диагональ t6″ - 15,2 см \nСтрана производитель  Китай Карты памяти \\tmicroSD\\nОперативная память t0,25 GB\\nВстроенная память \\t8 GBФорматы документов PDF, PDF(DRM), EPUB, EPUB(DRM), DJVU, FB2, FB2.ZIP, DOC, DOCX, RTFИзображения JPEG, BMP, PNG, TIFF. Тип дисплея \\tE-Ink Pearl Разрешение экрана \\t600х800.  Тип USB разъема \\tUSB 2.0\\nWi-Fi. Емкость аккумулятора t1300 мАч. Тип питания-aккумулятор",
       "image": "https://systema.kg/244695-large_default/elektronnaya-kniga-pocketbook-pb614-2-d-cis-white-6-800x600-a13-1ghz-256mb-1300-mah-170g.jpg",
       "color": "white",
       "id": 13
+    },
+    {
+      "name": "Kindle Paperwhite 2018",
+      "brand": "Amazon",
+      "price": 13240,
+      "description": "электронная книга 6\"; E-Ink Pearl, с подсветкой; сенсорный ввод; разрешение 1448x1072; 16 оттенков серого; Wi-Fi",
+      "image": "https://www.kivano.kg/images/product/89096/full/1613648732_07370300.jpg",
+      "color": "pink",
+      "id": 14
+    },
+    {
+      "name": "Kindle Oasis 2017 ",
+      "brand": "Amazon",
+      "price": 22190,
+      "description": "Электронная книга 7\"; E-Ink Carta, с подсветкой; сенсорный ввод; разрешение 1440x1080; 16 оттенков серого; Wi-Fi; карты памяти не поддерживаются\nПамять 32GB",
+      "image": "https://avatars.mds.yandex.net/get-mpic/1567763/img_id462135734732257720.jpeg/orig",
+      "color": "gray",
+      "id": 15
+    },
+    {
+      "name": "Kindle Paperwhite 2018 ",
+      "brand": "Amazon",
+      "price": 13240,
+      "description": "электронная книга 6\"; E-Ink Pearl, с подсветкой; сенсорный ввод; разрешение 1448x1072; 16 оттенков серого; Wi-Fi. 8GB",
+      "image": "https://www.kivano.kg/images/product/94415/full/1623902819_19928900.jpg",
+      "color": "green",
+      "id": 16
+    },
+    {
+      "name": "Pocketbook 740 Inkpad 3 Pro",
+      "brand": "Pocketbook",
+      "price": 27170,
+      "description": "сенсорный дисплей, 7.8\" (1872x1404) E-Ink Carta, с подсветкой 16 оттенков серого влагозащита Wi-Fi карты памяти не поддерживаются ресурс аккумулятора: 15000 страниц ШхДхТ: 137х195х8 мм, 215 г",
+      "image": "https://www.kivano.kg/images/product/88405/full/1612255283_23762900.jpg",
+      "color": "gray",
+      "id": 17
+    },
+    {
+      "name": "Pocket Book 1040 Inkpad X Metallic",
+      "brand": "PocketBook ",
+      "price": 43210,
+      "description": "сенсорный дисплей, 10.3\" E-Ink Carta, с подсветкой 16 оттенков серого Wi-Fi, Bluetooth карты памяти ресурс аккумулятора: 15000 страниц ШхДхТ: 173х249х5 мм, 300 г",
+      "image": "https://www.kivano.kg/images/product/85437/160378862343400_full.jpg",
+      "color": "gray",
+      "id": 18
+    },
+    {
+      "name": "Pocket Book 606",
+      "brand": "PocketBook",
+      "price": 10530,
+      "description": "дисплей 6\" (1024x758) E-Ink Carta 16 оттенков серого объем встроенной памяти: 8 ГБ карты памяти microSD ресурс аккумулятора: 8000 страниц ШхДхТ: 108х161х8 мм, 145 г",
+      "image": "https://www.kivano.kg/images/product/85439/full/1603788996_32799100.jpg",
+      "color": "white",
+      "id": 19
+    },
+    {
+      "name": " Pocket Book 628 Touch Lux 5",
+      "brand": " PocketBook",
+      "price": 17060,
+      "description": "сенсорный дисплей, 6\" (1024x758) E-Ink Carta, с подсветкой 16 оттенков серого объем встроенной памяти: 8 ГБ Wi-Fi карты памяти microSD ШхДхТ: 108х161х8 мм, 155 г",
+      "image": "https://www.kivano.kg/images/product/85447/full/1603791175_03392100.jpg",
+      "color": "red",
+      "id": 20
+    },
+    {
+      "name": "POCKETBOOK PB606-E-CIS",
+      "brand": "Pocketbook ",
+      "price": 9090,
+      "description": "PocketBook 606 – модель начального уровня с новым ультракомпактным дизайном. Кроме того, при весе в 145 г она является самым легким ридером в линейке. Модель оснащена экраном последнего поколения E Ink Carta и аккумулятором, обеспечивающим до полутора месяцев автономной работы. Все необходимое для комфортного чтения – и по приятной цене",
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_47_4_1_320.webp",
+      "color": "black",
+      "id": 21
+    },
+    {
+      "name": "RITMIX RBK-617",
+      "brand": "Ritmix",
+      "price": 6990,
+      "description": "Ritmix RBK-617 станет идеальной находкой для тех, кто предпочитает активный образ жизни. Благодаря малому весу и размеру ридер не займет много места, что позволяет брать его с собой куда угодно.\n\n",
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_55_0_1_320.webp",
+      "color": "black",
+      "id": 22
+    },
+    {
+      "name": " POCKETBOOK 616 PB616-H-CIS",
+      "brand": "Pocketbook",
+      "price": 10390,
+      "description": "Комфорт чтения в движении выходит на новый уровень. Реализованный в новом минималистском и изысканном дизайне компактный ридер размером всего 161.3 × 108 × 8 мм легко поместится в кармане джинсов и даже самой маленькой женской сумочке. Ридер доступен в привлекательном обсидиановом черном цвете",
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_36_0_320.webp",
+      "color": "black",
+      "id": 23
+    },
+    {
+      "name": "POCKETBOOK PB633-N-CIS",
+      "brand": "Pocketbook",
+      "price": 121190,
+      "description": "PocketBook 633 Color получил 6-дюймовый цветной экран E Ink Kaleido – такой же приятный и безвредный для зрения, как и обычные черно-белые дисплеи на «электронных чернилах».",
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_52_7_6_320.webp",
+      "color": "black",
+      "id": 24
     }
   ]
 }

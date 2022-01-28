@@ -7,7 +7,15 @@ const AdminPage = () => {
   return (
     <div className="admin-page">
       <Container>
-        <h2>admin page our oroducts</h2>
+        <h2
+          style={{
+            marginTop: "120px",
+            marginBottom: "40px",
+            color: "GrayText",
+          }}
+        >
+          Изменить данные
+        </h2>
         <AdminTable />
       </Container>
       <ToastContainer />

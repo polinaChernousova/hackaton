@@ -48,17 +48,26 @@ const AdminTable = () => {
             >
               <TableCell>
                 <Button
+                  style={{
+                    border: "1.5px solid #4138B0",
+                    color: "gray",
+                    fontWeight: "normal",
+                  }}
                   onClick={() => deleteProduct(item.id)}
-                  color="error"
-                  variant="contained"
                 >
-                  delete
+                  удалить
                 </Button>
               </TableCell>
               <TableCell>
                 <Link to={`/admin-panel/edit/${item.id}`}>
-                  <Button color="warning" variant="contained">
-                    Edit
+                  <Button
+                    style={{
+                      border: "1px solid #4138B0",
+                      backgroundColor: "rgb(218, 158, 218)",
+                      color: "white",
+                    }}
+                  >
+                    изменить
                   </Button>
                 </Link>
               </TableCell>

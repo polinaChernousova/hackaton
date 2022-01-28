@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import { toast } from "react-toastify";
 import { API } from "../helpers/const";
 
@@ -79,6 +79,11 @@ const AdminProvider = (props) => {
       toast.error("Ошибка");
     }
   };
+
+  // function payment() {
+  //   toast.success("Успешно оплачено");
+  // }
+
   return (
     <AdminContext.Provider
       value={{
@@ -87,6 +92,7 @@ const AdminProvider = (props) => {
         getProductToEdit,
         saveEditedProduct,
         deleteProduct,
+        // payment,
         products: state.products,
         productToEdit: state.productToEdit,
       }}

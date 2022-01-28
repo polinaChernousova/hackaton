@@ -49,11 +49,11 @@ const AddPage = () => {
   return (
     <div className="add-edit-page">
       <Container>
-        <h2>ADD PAGE</h2>
-        <h2>ДОБАВИТЬ ПРОДУКТЫ</h2>
+        <h2 style={{ color: "gray" }}>ДОБАВИТЬ НОВЫЙ ПРОДУКТ</h2>
 
         <form onSubmit={handleSubmit}>
           <TextField
+            className="input-add"
             onChange={(e) =>
               setNewProduct({ ...newProduct, name: e.target.value })
             }
@@ -62,6 +62,7 @@ const AddPage = () => {
             variant="standard"
           />
           <TextField
+            className="input-add"
             onChange={(e) =>
               setNewProduct({ ...newProduct, brand: e.target.value })
             }
@@ -70,6 +71,7 @@ const AddPage = () => {
             variant="standard"
           />
           <TextField
+            className="input-add"
             onChange={(e) =>
               setNewProduct({ ...newProduct, price: +e.target.value })
             }
@@ -87,6 +89,7 @@ const AddPage = () => {
             placeholder="Введите описание"
           />
           <TextField
+            className="input-add"
             onChange={(e) =>
               setNewProduct({ ...newProduct, image: e.target.value })
             }
@@ -108,10 +111,16 @@ const AddPage = () => {
               <MenuItem value="black">Черный</MenuItem>
               <MenuItem value="white">Белый</MenuItem>
               <MenuItem value="gray">Серый</MenuItem>
-              <MenuItem value="space-gray">Темно-серый</MenuItem>
+              <MenuItem value="green">Зеленый</MenuItem>
+              <MenuItem value="pink">Розовый</MenuItem>
+              <MenuItem value="red">Красный</MenuItem>
             </Select>
           </FormControl>
-          <Button type="submit" variant="contained">
+          <Button
+            style={{ backgroundColor: "mediumpurple" }}
+            type="submit"
+            variant="contained"
+          >
             Добавить
           </Button>
         </form>

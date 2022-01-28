@@ -13,14 +13,17 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import { Badge, ThemeProvider, createTheme } from "@mui/material";
-import { ShoppingCart } from "@mui/icons-material";
-// import { ClientContext } from "../Contexts/ClientProvider";
+import { Logout, ShoppingCart } from "@mui/icons-material";
+import { ClientContext } from "../context/ClientProvider";
+import { AuthContext } from "../context/AuthProvider";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Home", "Shop All", "Cart"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
-  // const { cartCount } = React.useContext(ClientContext);
+  const { cartCount } = React.useContext(ClientContext);
+  const { authWithGoogle, user, logout } = React.useContext(AuthContext);
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -60,152 +63,141 @@ const Navbar = () => {
   });
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <AppBar sx={{ position: "fixed" }}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
-            <Link to="/">
+    <>
+      <ThemeProvider theme={darkTheme}>
+        <AppBar sx={{ position: "fixed" }}>
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
+              <Link to="/">
+                <Typography
+                  variant="h6"
+                  noWrap
+                  component="div"
+                  sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+                >
+                  <img
+                    width={40}
+                    src="https://cdn-icons-png.flaticon.com/512/3594/3594375.png"
+                    alt=""
+                  />{" "}
+                  MOON BOOK
+                </Typography>
+              </Link>
+
+              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  color="inherit"
+                >
+                  <MenuIcon />
+                </IconButton>
+
+                <Link to="/">
+                  <Menu
+                    id="menu-appbar"
+                    anchorEl={anchorElNav}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "left",
+                    }}
+                    keepMounted
+                    transformOrigin={{
+                      vertical: "top",
+                      horizontal: "left",
+                    }}
+                    open={Boolean(anchorElNav)}
+                    onClose={handleCloseNavMenu}
+                    sx={{
+                      display: { xs: "block", md: "none" },
+                    }}
+                  >
+                    {pages.map((page) => (
+                      <MenuItem key={page} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center">{page}</Typography>
+                      </MenuItem>
+                    ))}
+                  </Menu>
+                </Link>
+              </Box>
+
               <Typography
                 variant="h6"
                 noWrap
                 component="div"
-                sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-              >
-                <img
-                  width={40}
-                  src="https://cdn-icons-png.flaticon.com/512/3594/3594375.png"
-                  alt=""
-                />{" "}
-                MOON BOOK
-              </Typography>
-            </Link>
-
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
                 sx={{
-                  display: { xs: "block", md: "none" },
+                  flexGrow: 1,
+                  display: { xs: "flex", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-            >
-              Moon
-              <br /> book
-            </Typography>
-
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Link to="/all-products">
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  Shop All
-                </Button>
-              </Link>
-              <Link to="/admin-panel/add">
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  ADD PRODUCT
-                </Button>
-              </Link>
-              <Link to="/admin-panel">
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  ADMIN PANEL
-                </Button>
-              </Link>
-            </Box>
-
-            {/* <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                Moon book
+              </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                <Link to="/all-products">
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    Shop All
+                  </Button>
+                </Link>
+
+                <Link to="/admin-panel/add">
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    ADD PRODUCT
+                  </Button>
+                </Link>
+                <Link to="/admin-panel">
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    ADMIN PANEL
+                  </Button>
+                </Link>
               </Box>
-            </Box> */}
 
-            <Box sx={{ flexGrow: 0 }}>
-              {/* <Link to="/cart"> */}
-              <IconButton size="large" color="inherit">
-                <img
-                  width={30}
-                  src="https://cdn-icons-png.flaticon.com/512/2438/2438136.png"
-                  alt=""
-                />
-                {/* <Badge color="error" badgeContent={cartCount}>
-                  <ShoppingCart />
-                </Badge> */}
-              </IconButton>
-              {/* </Link> */}
+              <Box sx={{ flexGrow: 0 }}>
+                <Link to="/cart">
+                  <IconButton size="large" color="inherit">
+                    <Badge color="error" badgeContent={cartCount}>
+                      <img
+                        width={30}
+                        src="https://cdn-icons-png.flaticon.com/512/2438/2438136.png"
+                        alt=""
+                      />
+                    </Badge>
+                  </IconButton>
+                </Link>
 
-              <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                </IconButton>
-              </Tooltip>
-              <Menu
-                sx={{ mt: "45px" }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </ThemeProvider>
+                {user ? (
+                  <>
+                    <IconButton>{user.displayName}</IconButton>
+                    <IconButton sx={{ p: 0 }}>
+                      <Avatar alt={user.displayName} src={user.photoURL} />
+                    </IconButton>
+                    <IconButton onClick={logout} size="large" color="inherit">
+                      <Logout />
+                    </IconButton>
+                  </>
+                ) : (
+                  <IconButton onClick={authWithGoogle} size="small">
+                    Войти
+                  </IconButton>
+                )}
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      </ThemeProvider>
+    </>
   );
 };
 export default Navbar;

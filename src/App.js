@@ -1,7 +1,11 @@
 import MyRoutes from "./MyRoutes";
 
 function App() {
-  return <MyRoutes />;
+  return (
+    <div>
+      <MyRoutes />
+    </div>
+  );
 }
 
 export default App;
