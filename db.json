@@ -1,21 +1,12 @@
 {
   "productsbook": [
     {
-      "name": "POCKETBOOK PB614-2-D-CIS",
-      "brand": "Pocketbook",
-      "price": "9990",
-      "description": "Диагональ t6″ - 15,2 см \nСтрана производитель  Китай Карты памяти \\tmicroSD\\nОперативная память t0,25 GB\\nВстроенная память \\t8 GBФорматы документов PDF, PDF(DRM), EPUB, EPUB(DRM), DJVU, FB2, FB2.ZIP, DOC, DOCX, RTFИзображения JPEG, BMP, PNG, TIFF. Тип дисплея \\tE-Ink Pearl Разрешение экрана \\t600х800.  Тип USB разъема \\tUSB 2.0\\nWi-Fi. Емкость аккумулятора t1300 мАч. Тип питания-aккумулятор",
-      "image": "https://systema.kg/244695-large_default/elektronnaya-kniga-pocketbook-pb614-2-d-cis-white-6-800x600-a13-1ghz-256mb-1300-mah-170g.jpg",
-      "color": "white",
-      "id": 13
-    },
-    {
       "name": "Kindle Paperwhite 2018",
       "brand": "Amazon",
-      "price": 13240,
+      "price": "13678",
       "description": "электронная книга 6\"; E-Ink Pearl, с подсветкой; сенсорный ввод; разрешение 1448x1072; 16 оттенков серого; Wi-Fi",
       "image": "https://www.kivano.kg/images/product/89096/full/1613648732_07370300.jpg",
-      "color": "pink",
+      "color": "gray",
       "id": 14
     },
     {
@@ -91,18 +82,9 @@
       "id": 22
     },
     {
-      "name": " POCKETBOOK 616 PB616-H-CIS",
-      "brand": "Pocketbook",
-      "price": 10390,
-      "description": "Комфорт чтения в движении выходит на новый уровень. Реализованный в новом минималистском и изысканном дизайне компактный ридер размером всего 161.3 × 108 × 8 мм легко поместится в кармане джинсов и даже самой маленькой женской сумочке. Ридер доступен в привлекательном обсидиановом черном цвете",
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_36_0_320.webp",
-      "color": "black",
-      "id": 23
-    },
-    {
       "name": "POCKETBOOK PB633-N-CIS",
       "brand": "Pocketbook",
-      "price": 121190,
+      "price": "12189",
       "description": "PocketBook 633 Color получил 6-дюймовый цветной экран E Ink Kaleido – такой же приятный и безвредный для зрения, как и обычные черно-белые дисплеи на «электронных чернилах».",
       "image": "https://object.pscloud.io/cms/cms/Photo/img_0_67_52_7_6_320.webp",
       "color": "black",

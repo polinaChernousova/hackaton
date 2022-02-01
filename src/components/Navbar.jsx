@@ -11,13 +11,17 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Badge, ThemeProvider, createTheme } from "@mui/material";
 import { Logout, ShoppingCart } from "@mui/icons-material";
 import { ClientContext } from "../context/ClientProvider";
 import { AuthContext } from "../context/AuthProvider";
 
-const pages = ["Home", "Shop All", "Cart"];
+const pages = [
+  { name: "Home", url: "/" },
+  { name: "Shop All", url: "/all-products" },
+  { name: "Cart", url: "/cart" },
+];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
@@ -34,7 +38,9 @@ const Navbar = () => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const navigate = useNavigate();
+  const handleCloseNavMenu = (url) => {
+    navigate(url);
     setAnchorElNav(null);
   };
 
@@ -96,32 +102,33 @@ const Navbar = () => {
                   <MenuIcon />
                 </IconButton>
 
-                <Link to="/">
-                  <Menu
-                    id="menu-appbar"
-                    anchorEl={anchorElNav}
-                    anchorOrigin={{
-                      vertical: "bottom",
-                      horizontal: "left",
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: "top",
-                      horizontal: "left",
-                    }}
-                    open={Boolean(anchorElNav)}
-                    onClose={handleCloseNavMenu}
-                    sx={{
-                      display: { xs: "block", md: "none" },
-                    }}
-                  >
-                    {pages.map((page) => (
-                      <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page}</Typography>
-                      </MenuItem>
-                    ))}
-                  </Menu>
-                </Link>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElNav}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "left",
+                  }}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{
+                    display: { xs: "block", md: "none" },
+                  }}
+                >
+                  {pages.map((page) => (
+                    <MenuItem
+                      key={page.name}
+                      onClick={() => handleCloseNavMenu(page.url)}
+                    >
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
+                  ))}
+                </Menu>
               </Box>
 
               <Typography

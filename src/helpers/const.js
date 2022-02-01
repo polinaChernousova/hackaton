@@ -1,1 +1,1 @@
-export const API = "http://localhost:8001/productsbook";
+export const API = "https://moon-book.herokuapp.com/api/productsbook";

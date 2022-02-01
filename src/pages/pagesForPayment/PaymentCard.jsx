@@ -116,20 +116,22 @@ const PaymentCard = () => {
           </div>
         </div>
       </div>
-      <Button
-        onClick={payment}
-        style={{
-          backgroundColor: "gray",
-          color: "white",
-          width: "15%",
-          position: "relative",
-          left: "42.5%",
-          bottom: "10%",
-          transformTranslate: "(-50%, 0)",
-        }}
-      >
-        Оплатить
-      </Button>
+      <Link to="/">
+        <Button
+          onClick={payment}
+          style={{
+            backgroundColor: "gray",
+            color: "white",
+            width: "15%",
+            position: "relative",
+            left: "42.5%",
+            bottom: "10%",
+            transformTranslate: "(-50%, 0)",
+          }}
+        >
+          Оплатить
+        </Button>
+      </Link>
 
       <ToastContainer />
     </div>
